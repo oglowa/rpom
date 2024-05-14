@@ -8,7 +8,7 @@
     <artifactId>rpom</artifactId>
     <version>19.84-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <name>ASYS RPOM</name>
     <description>Spice up u're life!</description>
     <inceptionYear>2024</inceptionYear>
     <organization>
