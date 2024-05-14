@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.arvato.systems.project</groupId>
+    <artifactId>rpom</artifactId>
+    <version>19.84-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <description>Spice up u're life!</description>
+    <inceptionYear>2024</inceptionYear>
+    <organization>
+        <name>Arvato Systems GmbH</name>
+        <url>http://www.arvato-systems.de</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+        </license>
+    </licenses>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.soebes.maven.plugins</groupId>
+                <artifactId>echo-maven-plugin</artifactId>
+                <version>0.5.0</version>
+                <executions>
+                    <execution>
+                        <id>01-start</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>echo</goal>
+                        </goals>
+                        <configuration>
+                            <echos>
+                                <echo>Relax!</echo>
+                            </echos>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>55-between</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>echo</goal>
+                        </goals>
+                        <configuration>
+                            <echos>
+                                <echo>Don't do it!</echo>
+                            </echos>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>99-stop</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>echo</goal>
+                        </goals>
+                        <configuration>
+                            <echos>
+                                <echo>That's, what Frankie says</echo>
+                            </echos>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
